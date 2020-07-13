@@ -1,0 +1,326 @@
+body {
+    padding: 0;
+    margin: 0 auto;
+    height: calc(100% - 12em);
+    line-height: 1;
+    background-color: #F5F7FA;
+}
+header{
+    display: flex;
+    background-color: white;
+    height: 70px;
+    border-bottom: solid 1px lightgray;
+    box-shadow: 2px 1px 20px #E4E6E8;
+}
+
+h1.app-title{
+   display: flex;
+   align-items: center;
+   font-style: normal;
+   font-weight: bold;
+   font-size: 42px;
+   line-height: 29px;
+   font-family: 'Butterfly Kids', cursive;
+   color: #4786FF;
+}
+
+#filter-by{
+    position: absolute;
+    right: 120px;
+    margin-top: 16px;
+    font-size: 15px;
+    margin-right: 0px;
+    padding: 0px 4px;
+    border-color: #4786FF;
+}
+
+h1 a{
+    list-style: none;
+    text-decoration: none;
+    color: #4786FF;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 42px;
+    line-height: 29px;
+    font-family: 'Butterfly Kids', cursive;
+    top: -50px;
+    position: relative;
+    padding: 0;
+    margin: 0;
+}
+
+#notes .empty-message{
+    font-size: 1.5em;
+    margin-right: 26px;
+    text-align: center;
+}
+
+h1{
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+.actions {
+    text-align: center;
+    margin: 2em 0 10em;
+    border-radius: 20%;
+    padding: 10px;
+    font-family: 'Inter', sans-serif;
+}
+
+div#notes{
+    margin-top: 4em;
+}
+
+.select {
+    font-size: 16px;
+    font-weight: 100;
+    color: #707070;
+    border: 3px solid #4786FF;
+    padding: 10px;
+    font-family: 'Inter', sans-serif;
+}
+
+img{
+    width: 24px;
+    height: 24px;
+    margin-left: 120px;
+    margin-top: 22px;
+}
+
+#search-text {
+    font-family: 'Inter', sans-serif;
+    outline: 0;
+    font-size: 16px;
+    margin-left: 12px;
+    border: none;
+    border-style: none;
+    width: 220px;
+    padding:1px 4px;
+    left: 50px;
+    right: 50px;
+}
+
+.search-box{
+    margin-left: 733px;
+    padding: 1px 1px;
+    max-width: 100%;
+    border: none;
+    margin-top: 20px;
+}
+
+.create-box #create-note{
+    border-radius: 4px;
+    outline: 0;
+    cursor: pointer;
+    text-align: center;
+}
+
+.create-box #create-note{
+    box-shadow: 0px 4px 20px rgba(71, 134, 255, 0.5);
+}
+
+.input::placeholder{
+    color: #E4E6E8;
+}
+
+.input:focus{
+    outline: 0;
+}
+
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    padding: 0 .5em;
+    width: 204px;
+    line-height: 38px;
+    height: 38px;
+    font-family: 'Inter', sans-serif;
+    background: url(../images/dropdown.png) no-repeat 100% 50%;
+    background-color: #ffffff;
+    box-shadow: 2px 3px 4px #F5F7FA;
+    outline-style: none;
+    margin-right: 80px;
+    margin: 1rem;
+    cursor: pointer;
+    color: #4786FF;
+}
+
+#notes {
+    width: calc(100% - 360px);
+    float: left;
+    padding-left: 192px;
+    color: #4786FF;
+    font-family: 'Inter', sans-serif;
+}
+
+#notes::-webkit-scrollbar {
+    display: none;
+}
+
+#notes a {
+    display: inline-block;
+    color: #707175;
+    font-weight: 100;
+    text-decoration: none;
+    margin: 5px 8px;
+    padding: 100px 35px 50px 35px;
+    width: calc(50% - 100px);
+    box-shadow: 5px 15px 20px #d1d1d1;
+    background-color: #ffffff;
+}
+
+#notes a > span {
+    margin: 0;
+    display:block;
+    overflow: hidden;
+    text-overflow: ellipsis; 
+    width: cacl(100%-20px);
+    white-space: normal; 
+    text-align: left; 
+    word-wrap: break-word; 
+    display: -webkit-box; 
+    -webkit-line-clamp: 5; 
+    -webkit-box-orient: vertical;
+}
+
+#notes a > span:nth-of-type(1) {
+    font-size: 27px;
+    font-weight: 900;
+    color: #4786FF;
+    overflow: hidden;
+    line-height: 1.2em;
+    height: 2.4em;
+}
+
+#notes a > span:nth-of-type(2) {
+    font-weight: 500;
+    color: #525252;
+    margin-top: 1em;
+    padding-bottom: 10px;
+    height: 4.5em;
+}
+
+#notes a > p {
+    display: inline-block;
+    font-size: 14.5px;
+    font-weight: 10px;
+    color: #707175;
+    line-height: 1.5em;
+    height: 4.5em;
+    margin-bottom: 0.1em;
+    margin-top: 1em;
+}
+
+#create-note {
+    text-indent: -99999px;
+    display: block;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    display: block;
+    position: fixed;
+    bottom: 1.5em;
+    right: 100px;
+    border: none;
+    background: url(../images/create-note.png)no-repeat 50% 50%;
+    background-color: #4786FF;
+    box-shadow: 2px 2px 5px 0px #f0efdc;
+    margin-bottom: 17px;
+}
+
+/* Edit page */
+
+div #header-edit{
+    text-align: center;
+    padding-top: 20px;
+}
+
+.go-home {
+    width: 100%;
+    text-align: center;
+    margin: 1em 0 4em;
+}
+
+.go-home a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: url(../images/go-home.png)50% 50% no-repeat;
+    background-color: #4786FF;
+}
+
+.edit-container {
+    margin: 0 auto;
+    width: calc(100% - 50em);
+    padding: 2em 4em 2em 2em;
+    box-shadow: 5px 15px 20px #d1d1d1;
+}
+
+#header-edit{
+    display: none;
+}
+
+.edit-container input{
+    display: block;
+    width: 100%;
+    background: none;
+    line-height: 5rem;
+    height: 5rem;
+    font-size: 2.5rem;
+    font-weight: 900;
+    border: none;
+    border-bottom: #121212;
+    padding-left: 0.5em ;
+    outline: none;
+}
+
+.edit-container input::placeholder {
+    color: #4786FF
+}
+
+.edit-container textarea {
+    display: block;
+    width: 100%;
+    border: none;
+    height: 400px;
+    font-size: 1.2em;
+    font-family: 'Inter', sans-serif;
+    font-weight: 100;
+    padding: 1em 1em;
+    resize: none;
+    border: none;
+    border-top: 1px solid #b9b9b9;
+    overflow: auto;
+    outline: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+
+.edit-container textarea::placeholder {
+    color: #4786FF
+}
+
+#remove-note {
+    width: 240px;
+    height: 35px;
+    line-height: 35px;
+    font-weight: 600;
+    color: #ffffff;
+    background-color: #4786FF;
+    border: none;
+    font-size: 16px;
+    font-family: 'Inter', sans-serif;
+    margin: 2em 0;
+    border-radius: 4px;
+    cursor: pointer;
+    outline: none;
+}
+
+.remove-button{
+    text-align: center;
+}   

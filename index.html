@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NOTEE | Writing everyday</title>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+    <meta name="format-detection" content="telephone=no, address=no, email=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+    <link href="https://fonts.googleapis.com/css2?family=Butterfly+Kids&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <link rel="icon" href="./images/logoNOTEE.png" type="image/x-icon">
+    <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="stylesheet" href="./styles/m-styles.css">
+</head>
+<body>
+    
+    <header>
+        <img src="./images/search-icon.png" alt="">
+
+        <input type="text" id="search-text" class="input" placeholder="Search in notes">
+            
+        <select class="dropdown" id="filter-by">
+                  <option value="byEdited">Sort by last edited</option>
+                  <option value="byCreated">Sort by recently created</option>
+                  <option value="alphabetical">Sort by alphabetically</option>
+        </select>
+       
+    </header>
+
+<section class="app-title"><h1><a href="index.html">Notee</a></h1></section>
+
+<section id="board">
+    <div class="create-box">
+        <button id="create-note" class="button"></button>
+    </div>
+</section>
+
+<div id="notes"></div>
+
+    <script src="./app/uuid4.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.20.1/moment-with-locales.min.js"></script>
+    <script src="./app/notes-functions.js"></script>
+    <script src="./app/notes-app.js"></script>
+</body>
+</html>
